@@ -1,0 +1,23 @@
+.card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f2e7d5;
+  height: fit-content;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px 0 rgb(57, 62, 70, 0.2);
+  cursor: pointer;
+}
+
+.card:hover .card-body > h3 {
+  text-decoration: underline;
+  color: #6D9886;
+}
+
+.card-body {
+  padding: 0 1rem;
+}
+
+.card-body > p {
+  white-space: pre-line;
+}

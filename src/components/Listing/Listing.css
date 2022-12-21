@@ -1,0 +1,48 @@
+.listing {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 8px 0 rgb(57, 62, 70, 0.2);
+  cursor: pointer;
+  width: 100%;
+  min-width: 18rem;
+  max-width: 20rem;
+  height: 25rem;
+}
+
+.listing:hover > h2 {
+  text-decoration: underline;
+  color: #6D9886;
+}
+
+.listing:hover > p {
+  animation: slide infinite 3s alternate;
+}
+
+.listing > p {
+  flex: 1;
+  overflow: scroll;
+  white-space: pre-line;
+  margin: 1rem -0.5rem;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+
+
+.listing > img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.listing > h2 {
+  margin-bottom: 0;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}

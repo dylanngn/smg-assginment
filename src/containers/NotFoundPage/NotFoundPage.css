@@ -1,0 +1,11 @@
+.not-found {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .not-found > img {
+    width: 48em;
+  }
+  
